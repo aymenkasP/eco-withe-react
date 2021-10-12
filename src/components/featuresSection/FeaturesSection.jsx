@@ -28,11 +28,12 @@ const FeaturesSectionContainer = styled.section`
 `;
 
 const Container = styled.div`
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     place-items: center;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     padding: 40px 0;
-
 `
+
+
