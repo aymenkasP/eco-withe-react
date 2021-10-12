@@ -13,7 +13,9 @@ const Swiperslide = () => {
 export default Swiperslide;
 
 const SwiperslideContainer = styled.section`
+    margin-top: 223rem;
    width: 80%;
+   height: 80vh;
   margin: auto;
   background-color: red;
 `;
