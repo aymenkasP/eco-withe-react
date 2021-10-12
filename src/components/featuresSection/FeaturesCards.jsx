@@ -42,4 +42,9 @@ border-right: 1px solid #eeeeee;
 const Icon = styled.div`
 font-size: 2rem;
 
+ &:hover { 
+     color: gray;
+     cursor: pointer;
+ }
+
 `
