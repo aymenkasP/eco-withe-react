@@ -37,7 +37,6 @@ export default function NavLinks() {
 }
 
 const List = styled.ul`
-    background:red;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -45,7 +44,8 @@ const List = styled.ul`
 
 `;
 const ListItem = styled.li`
-background: green;
+display: flex;
+align-items: center;
 `;
 
 

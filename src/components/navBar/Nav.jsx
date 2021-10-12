@@ -20,5 +20,7 @@ const NavContainer = styled.nav`
   width: 80%;
   margin: auto;
   justify-content: space-between;
-
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+padding:1rem;
+margin-top: 1.5rem;
 `;

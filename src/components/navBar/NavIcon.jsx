@@ -12,11 +12,11 @@ export default function NavIcon({icon}) {
     )
 }
 
-
 const Icon = styled.div`
-
-    background-color: red;
-
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+    margin-right: auto;
 
 `
 
