@@ -8,12 +8,21 @@ export default function ProductsCard({productImage,productTitle,productDescripti
                         <ImageContainer >
                             <SmallImage >
                                 <ProductImage >
-                                    {productImage}
+                                    <img src={productImage} alt="product" />
+                                </ProductImage>
+                                <ProductImage >
+                                    <img src={productImage} alt="product" />
+                                </ProductImage>
+                                <ProductImage >
+                                    <img src={productImage} alt="product" />
+                                </ProductImage>
+                                <ProductImage >
+                                    <img src={productImage} alt="product" />
                                 </ProductImage>
                             </SmallImage>
                             <BigImage >
                                 <BigProductImage >
-                                   {productImage}
+                                <img src={productImage} alt="product" />
                                 </BigProductImage>
                             </BigImage>    
                         </ImageContainer>
@@ -33,7 +42,7 @@ export default function ProductsCard({productImage,productTitle,productDescripti
                                 {productDescription}
                             </ProductDescription>
                             <Price >
-                                {price}
+                                ${price}
                             </Price>
                             <Button >
                             add to cart
@@ -56,7 +65,7 @@ const  ProductsCardBody = styled.div`
   padding:2rem;
   align-items: center;
   margin:1.5rem 0;
-
+  text-align: start;
 `
 const  ImageContainer = styled.div`
      display:flex;
@@ -65,6 +74,7 @@ const  ImageContainer = styled.div`
     flex:1 1 50rem;
 `
 const  SmallImage = styled.div`
+
       width:20%;
     img {
         width:100%;
@@ -81,6 +91,7 @@ const  ProductImage = styled.div`
      
 `
 const  BigImage = styled.div`
+
      width:80%;
   padding:1rem;
   img {
@@ -92,40 +103,48 @@ const  BigImage = styled.div`
   }
 `
 const  BigProductImage = styled.div`
+
     
 `
 const  Content = styled.div`
     
 `
 const  ProductTitle = styled.h3`
-    font-size: 2.5rem;
-  color:var(--black);
+
+    font-size: 1.8rem;
+  color:black;
+  margin: 0;
 `
-const  Stars = styled.h3`
+const  Stars = styled.div`
     font-size: 1.7rem;
-  color:var(--orange);
+  color:orange;
   padding:.5rem 0;
 `
 const  ProductDescription = styled.p`
     font-size: 1.5rem;
   color:#666;
   padding:1rem 0;
+  margin: 0;
 `
 const  Price = styled.div`
      font-size: 2.5rem;
-  color:var(--black);
+  color:black;
   font-weight: bolder;
 `
 const  Button = styled.button`
      display: inline-block;
   margin-top: 1rem;
   border-radius: .5rem;
-  border:.2rem solid var(--black);
+  border:.2rem solid black;
   font-weight: bolder;
   font-size: 1.7rem;
   color:var(--black);
   cursor: pointer;
   background:#fff;
-  padding:.8rem 3rem;
+  padding:.5rem 2rem;
+  &:hover {
+    background-color:black ;
+  color:#fff;
+  }
 `
 

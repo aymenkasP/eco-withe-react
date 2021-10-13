@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import ProductsCard from './ProductsCard'
+import image from './product.png'
 
 export default function ProductsSection() {
     return (
@@ -7,7 +9,24 @@ export default function ProductsSection() {
             <ProductsSectionContainer>
                  <h2>Products</h2>
                 <CardSectionContainer >
-
+                    <ProductsCard 
+                    productImage={image}
+                     productTitle="addidas dooz 123s"
+                     productDescription="lorem ipsum dolor sit amet"
+                      price="123"
+                      />
+                    <ProductsCard 
+                    productImage={image}
+                     productTitle="addidas dooz 123s"
+                     productDescription="lorem ipsum dolor sit amet"
+                      price="123"
+                      />
+                    <ProductsCard 
+                    productImage={image}
+                     productTitle="addidas dooz 123s"
+                     productDescription="lorem ipsum dolor sit amet"
+                      price="123"
+                      />
                 </CardSectionContainer>
             </ProductsSectionContainer>
         </>
@@ -24,6 +43,5 @@ const ProductsSectionContainer = styled.section`
 `
 
 const CardSectionContainer =styled.section`
-background-color: red;
-
+padding : 2rem
 `
