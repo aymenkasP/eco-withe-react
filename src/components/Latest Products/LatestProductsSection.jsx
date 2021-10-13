@@ -6,7 +6,7 @@ export default function LatestProductsSection() {
     return (
         <LatestProductsSectionContainer>
             <Title >
-            Latest Products
+                Latest Products
             </Title>
             <ProductsList />
         </LatestProductsSectionContainer>
